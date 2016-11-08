@@ -1,0 +1,15 @@
+server:
+  rootPath: /api
+  type: simple
+  applicationContextPath: /
+  adminContextPath: /admin
+  connector:
+    type: http
+    port: ${PORT:-8080}
+  requestLog:
+      appenders: []
+
+logging:
+  level: INFO
+  loggers:
+    za.co.wernerm: DEBUG
